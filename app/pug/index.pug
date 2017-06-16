@@ -1,4 +1,97 @@
 extends _template
 
 block content
-   
+   .wrapper
+    header.header  
+        .container
+            .header__menu
+                .header__logo
+                    img.header__pic(src="./img/logo.png")                    
+                .header__text
+                    .header__descr
+                        p MBA applications
+                        p and job search consulting          
+                ul.nav__list
+                    li.nav__item_language
+                        a.nav__link(href="#")
+                            img.nav__pic(src="./img/lang.png")
+                    li.nav__item
+                        p.nav__lang Ru
+                    li.nav__item_language 
+                        a.nav__link(href="#")
+                            img.nav__pic(src="./img/lang.png")   
+                    li.nav__item
+                        p.nav__lang En
+                    li.nav__item
+                        a.nav__link(href="#")
+                            img.nav__pic(src="./img/fbook.png")  
+                    li.nav__item
+                        a.nav__link(href="#")
+                            img.nav__pic(src="./img/in.png")  
+                    li.nav__item
+                        a.nav__link(href="#")
+                            img.nav__pic(src="./img/insta.png") 
+                button.button
+                    a.button__link(href="#") 
+                        i.fa.fa-pencil(aria-hidden="true")
+                        | Написать письмо 
+                button.button                    
+                    a.button__link(href="#win8")
+                        i.fa.fa-phone.fa-rotate-270(aria-hidden="true")
+                        | Заказать звонок    
+    .hero
+        .hero__menu
+            .container
+                ul.menu__list
+                    li.menu__item
+                        a.menu__link(href="#") Консультации
+                    li.menu__item
+                        a.menu__link(href="#") Сопровождение МВА
+                    li.menu__item
+                        a.menu__link(href="#") Редактирование документов
+                    li.menu__item
+                        a.menu__link(href="#") Составление резюме
+                    li.menu__item
+                        a.menu__link(href="#") Обо мне
+                    li.menu__item
+                        a.menu__link(href="#") Блог                  
+        .container
+            .center  
+                .center__block.center__block_one
+                    .center__description
+                        img.center__pic(src="./img/mba.png")
+                        p 
+                            |ЗАИНТЕРЕСОВАНЫ
+                            br
+                            |В МВА?
+                .center__block.center__block_two
+                    .center__description
+                        img.center__pic(src="./img/voice.png")
+                        p 
+                            |НУЖНА ПОДГОТОВКА
+                            br
+                            |К СОБЕСЕДОВАНИЮ?
+                .center__block.center__block_three
+                    .center__description
+                        img.center__pic(src="./img/earth.png")
+                        p 
+                            |МЕЧТАЕТЕ О РАБОТЕ
+                            br
+                            |В ЕВРОПЕ ИЛИ США?
+                .center__block.center__block_four 
+                    .center__description 
+                        img.center__pic(src="./img/text.png")  
+                        p 
+                            |ХОТИТЕ ПОРАЗИТЬ
+                            br
+                            |СИЛЬНЫМ РЕЗЮМЕ?  
+                .center__header
+                    h1 
+                        | КАРЬЕРНЫЙ КОУЧИНГ И ПОМОЩЬ
+                        br
+                        | В ПОСТУПЛЕНИИ НА ЗАРУБЕЖНЫЕ ПРОГРАММЫ
+                        br
+                        | МАГИСТРАТУРЫ И МВА
+                    h2 От Ольги Лермонтовой     
+                .center__down
+                    img(src="./img/down.png")                            
