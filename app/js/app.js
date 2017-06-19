@@ -1,7 +1,7 @@
 (function($){
   $(function() {
     $('.menu__icon').on('click', function() {
-      $(this).closest('.menu').toggleClass('menu_state_open');
+      $(this).closest('.header').toggleClass('header_state_open');
     });
   });
 });

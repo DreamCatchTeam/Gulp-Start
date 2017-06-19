@@ -7,11 +7,13 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  min-height: 100vh; }
+  min-height: 100vh;
+  padding-bottom: 75px;
+  padding-top: 59px;
+  position: relative; }
 
 .header {
   width: 100%;
-  height: 80px;
   background: #ffffff;
   padding-top: 10px; }
 
@@ -35,7 +37,8 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-bottom: 18px; }
 
 .header__logo {
   display: -webkit-box;
@@ -80,6 +83,15 @@
   color: #e35444;
   font-weight: 600; }
 
+.buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+
 .button {
   border: none;
   background: -webkit-linear-gradient(13deg, #9b264e 0%, #bc374a 100%);
@@ -87,7 +99,8 @@
   padding: 8px;
   -webkit-border-radius: 35px;
           border-radius: 35px;
-  width: 195px; }
+  width: 195px;
+  margin-right: 10px; }
 
 .button__link {
   text-decoration: none;
@@ -96,13 +109,12 @@
 .fa {
   margin-right: 13px; }
 
-.hero {
-  padding-bottom: 75px; }
-
 .hero__menu {
   width: 100%;
   height: 60px;
-  background: rgba(89, 46, 56, 0.8); }
+  background: rgba(89, 46, 56, 0.8);
+  position: absolute;
+  z-index: 2; }
 
 .menu__list {
   display: -webkit-box;
@@ -135,8 +147,8 @@
   margin-top: 50px; }
 
 .center__block {
-  width: 250px;
-  height: 200px;
+  width: 204px;
+  height: 206px;
   position: absolute; }
   .center__block_one {
     background: rgba(228, 99, 83, 0.9);
@@ -147,17 +159,20 @@
     right: 6%; }
   .center__block_three {
     background: rgba(72, 10, 46, 0.9);
-    top: 20%;
-    left: -5.7%; }
+    top: 20.8%;
+    left: -1.9%; }
+    @media (max-width: 1265px) {
+      .center__block_three {
+        left: 0; } }
   .center__block_four {
     background: rgba(253, 214, 152, 0.9);
     left: 15.1%;
-    top: 46.5%; }
+    top: 48.3%; }
     .center__block_four p {
       color: #39002b; }
 
 .center__description {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
   padding-top: 40px;
@@ -178,6 +193,9 @@
     font-size: 150%;
     font-weight: 400;
     margin-bottom: 10px; }
+    @media (max-width: 860px) {
+      .center__header h1 {
+        font-size: 120%; } }
   .center__header h2 {
     color: #e4b16b;
     font-style: italic;
@@ -188,3 +206,6 @@
   position: absolute;
   left: 50%;
   bottom: -10.5%; }
+  @media (max-width: 480px) {
+    .center__down {
+      display: none; } }

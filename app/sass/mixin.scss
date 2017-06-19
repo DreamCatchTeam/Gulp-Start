@@ -2,7 +2,7 @@
   @return ($pxsize/$rembase) + rem};
 
 @mixin desktop {
-  @media (max-width: 1200px) {
+  @media (max-width: 1265px) {
     @content;
   }
 }
@@ -14,7 +14,7 @@
 }
 
 @mixin tablets {
-  @media (max-width: 768px) {
+  @media (max-width: 860px) {
     @content;
   }
 }
